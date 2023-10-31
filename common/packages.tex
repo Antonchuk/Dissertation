@@ -116,17 +116,18 @@
 %%% Таблицы %%%
 \usepackage{longtable,ltcaption} % Длинные таблицы
 \usepackage{multirow,makecell}   % Улучшенное форматирование таблиц
-\usepackage{tabu, tabulary}      % таблицы с автоматически подбирающейся
+%\usepackage{tabu, tabulary}      % таблицы с автоматически подбирающейся
                                  % шириной столбцов (tabu обязательно
                                  % до hyperref вызывать)
+\usepackage{tabu}   
+\usepackage{tabulary}                            
 \makeatletter
-%https://github.com/tabu-issues-for-future-maintainer/tabu/issues/26
-\@ifpackagelater{longtable}{2020/02/07}{
+%%https://github.com/tabu-issues-for-future-maintainer/tabu/issues/26
+%%\@ifpackagelater{longtable}{2020/02/07}{
 \def\tabuendlongtrial{%
     \LT@echunk  \global\setbox\LT@gbox \hbox{\unhbox\LT@gbox}\kern\wd\LT@gbox
                 \LT@get@widths
 }%
-}{}
 \makeatother
 
 \usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
