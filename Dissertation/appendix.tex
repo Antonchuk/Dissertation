@@ -1,5 +1,11 @@
+
+
+
+\chapter{Расчет разрешения по массе для различных длин пролета ионов для атомно-зондового томографа}\label{app:A}
+
+
 \begin{landscape}
-\chapter{Параметры исследования сплава Al-3.5Cu-0.2Mn-0.1S}\label{app:A}
+\chapter{Параметры исследования сплава Al-3.5Cu-0.2Mn-0.1S}\label{app:B}
 
 
 \begin{longtable}{|p{6cm}|c|c|c|c|c|c|c|c|c|}
@@ -33,13 +39,24 @@
 	Число атомов (0-100 а.е.м.)    & \thead{514 748} & \thead{558 408} & \thead{591 629} & \thead{4 538 007} & \thead{2 648 840} & \thead{5 898 660} & \thead{7 653 641} & \thead{1 899 266} & \thead{581 324}      \\ \hline
 \end{longtable}
 
-\begin{table} [htbp]
-	\centering
-	\caption{Метрики качества атомно-зондовых данных}
-	\label{tab:params_AlCuMnSn2}
-	\begin{tabular} {| p{6cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{2cm} | p{2cm} |}
-		\hline
-		ННомер набора данных & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+\clearpage
+
+\begin{longtable} {| p{6cm} | c | c | c | c | c | c | c | c | c |}
+	\caption{Метрики качества атомно-зондовых данных}\\
+	\hline
+	\textbf{Номер набора данных} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7}& \textbf{8} & \textbf{9}\\
+	\hline
+	\endfirsthead
+	\multicolumn{10}{c}%
+	{\tablename\ \thetable\ -- \textit{Начало на предыдущей странице}} \\
+	\hline
+	\textbf{Номер набора данных} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7}& \textbf{8} & \textbf{9} \\
+	\hline
+	\endhead
+	\hline \multicolumn{10}{r}{\textit{Продолжение на следующей странице}} \\
+	\endfoot
+	\hline
+	\endlastfoot
 		Мощность, отн. ед. & 80 & 100 & 110 & 130 & 130 & 110 & 150 & 150 & 170  \\ \hline
 		Однократные события, \% & 97.35 & 96.70 & 96.43 & 97.45 & 96.13 & 97.26 & 97.19 & 96.78 & 97.29              \\ \hline
 		Доля мультисобытий Cu, \% & 3.13 & 3.07 & 2.66 & 3.80 & 2.35 & 3.43 & 3.07 & 3.02 & 3.25               \\ \hline
@@ -51,11 +68,10 @@
 		Mn concentration, \%    & - & 0.006 & 0.01 & 0.006 & - & - & 0.005 & - & -      \\ \hline
 		Соотношение Al$^+$/Al$^{++}$, отн. ед., \%    & 78 & 170 & 386 & 210 & 182 & 230 & 289 & 73 & 168      \\ \hline
 		Число атомов (0-100 а.е.м.)    & \thead{514 748} & \thead{558 408} & \thead{591 629} & \thead{4 538 007} & \thead{2 648 840} & \thead{5 898 660} & \thead{7 653 641} & \thead{1 899 266} & \thead{581 324}      \\ \hline
-	\end{tabular}
-\end{table}
+\end{longtable}
 \end{landscape}
 
-\chapter{Пример листинга кода}\label{app:B}
+\chapter{Пример листинга кода}\label{app:C}
 Для крупных листингов есть два способа. Первый красивый, но в нём могут быть
 проблемы с поддержкой кириллицы (у вас может встречаться в~комментариях
 и~печатаемых сообщениях), он представлен на листинге~\cref{lst:hwbeauty}.
